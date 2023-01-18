@@ -1,12 +1,37 @@
 #nav-logo{
     display: block;
-    width: 30%;
+    width: 200px;
     height: 30%;
 }
 
-
 h1{
     font-size: 300% !important;
+}
+
+
+.grid{
+    padding:0px;
+    min-height: 500px !important;
+}
+
+#grid-text{
+    padding: 30px !important;
+}
+
+.grid-img{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    min-height: 100% !important;
+}
+
+#about{
+    background-image: url('/media/1.jpeg');
+    background-position:top;
+}
+
+.grid-item{
+    display: flex;
 }
 
 
@@ -14,12 +39,40 @@ h1{
     h1{
         font-size: 250% !important;
     }
+
+    a[role=button]{
+        font-size: medium;
+    }
+
+    #nav-logo{
+        width: 150px;
+        height: 25%;
+    }
     
   }
+
+  @media screen and (max-width: 610px) {
+    a[role=button]{
+        font-size: small;
+    }
+}
 
   @media screen and (max-width: 576px) {
     h1{
         font-size: 200% !important;
     }
+
+    a[role=button]{
+        font-size: 10px;
+    }
+
+    #nav-logo{
+        display: block;
+        width: 95px;
+        height: 20%;
+    }
+
+    
+
     
   }

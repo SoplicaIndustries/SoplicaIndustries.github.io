@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
     <title>Soplica Industries</title>
 </head>
-<body>
+<body onload="age()">
 
     <nav class="container-fluid">
         <ul>
           <li><img src="media/sop_clear.png" id="nav-logo"></li>
         </ul>
         <ul>
-          <li><a role="button" class="outline" href="#">About me</a></li>
+          <li><a role="button" class="outline" href="#">About</a></li>
           <li><a role="button" class="outline" href="#">Skills</a></li>
           <li><a role="button" class="outline" href="#">Experience</a></li>
           <li><a role="button" class="outline" href="#">Contact</a></li>
@@ -29,13 +29,27 @@
             <h5>Hi, my name is</h5>
             <h1>Kacper Rogóż</h1>
             <h1>Im a Fullstack developer</h1>
-            <h5>Currently I'm building web-apps and API's, but thats not all I know <br> My main goal is to become a software engineer in the near future</h5>
+            <h5>Currently I'm studying in a technical school, and working as a freelancer.<br> My main goal is to become a software engineer in the near future</h5>
         </hgroup>
 
-        <div id="card">
-            <div>1</div>
-            <div>2</div>
-          </div>
+        
+        <div class="container">
+          <article class="grid">
+            <div class="grid-img" id="about">
+            </div>
+            <div id="grid-text">
+              <hgroup>
+                <h2>About me</h1>
+                <h3>Let me tell you a story</h2>
+                <p>My name is Kacper, I'm a <strong id="age"></strong> years old student from a small town in Poland.
+                  I code since I was 14, and it became one of my hobbies. Currently I'm a student in a technical school, with programming specialization.
+                  In free time i like riding mountain bikes, hiking, and sailing. Because of my bike obsession, I had to learn how to service it, so I also know a little bit of mechanic stuff.
+                </p>
+              </hgroup>
+            </div>
+          </article>
+        </div>
+
     </main>
     <script src="script.js" defer></script>
 </body>
