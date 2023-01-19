@@ -5,3 +5,11 @@ function age(){
     let container = document.getElementById('age');
     container.innerText = age;
 }
+
+function show(id){
+    let element = document.getElementById(id);
+    const elementRect = element.getBoundingClientRect();
+    const absoluteElementTop = elementRect.top + window.pageYOffset;
+    const middle = absoluteElementTop - (window.innerHeight / 5);
+    window.scrollTo({top: middle, behavior: 'smooth'});
+}

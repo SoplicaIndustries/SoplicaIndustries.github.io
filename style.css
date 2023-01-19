@@ -9,11 +9,51 @@ h1{
     font-size: 300% !important;
 }
 
+.card{
+    margin-bottom: 25%;
+
+}
+
+.skill-img{
+    display: block;
+    width: 50px;
+    float:left;
+
+}
+
+.skill-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ctr{}
+
+.skill-prog{
+    width: 80% !important;
+}
+
+#skill-table{
+    margin: 0px !important;
+    overflow-y: scroll;
+}
 
 .grid{
     padding:0px;
     min-height: 500px !important;
 }
+
+.skill-card{
+    min-height: fit-content !important;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-auto-flow: column;
+}
+
 
 #grid-text{
     padding: 30px !important;
@@ -26,7 +66,7 @@ h1{
     min-height: 340px !important;
 }
 
-#about{
+.about-img{
     background-image: url('/media/1.jpeg');
     background-position:top;
 }
@@ -35,6 +75,15 @@ h1{
     display: flex;
 }
 
+#Experience{
+    background-image: url('/media/2.jpg');
+    background-position:top;
+}
+
+#message{
+    resize: none;
+    overflow: auto;
+}
 
 @media screen and (max-width: 768px) {
     h1{
