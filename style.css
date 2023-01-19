@@ -4,6 +4,20 @@
     height: 30%;
 }
 
+main{
+     margin-top: 10%;
+}
+
+nav{
+    top:0;
+    position: fixed !important;
+    transition: top 0.5s !important;
+}
+
+#welcome-screen{
+    margin-bottom: 50%;
+    margin-top:5%
+}
 
 h1{
     font-size: 300% !important;
@@ -28,15 +42,13 @@ h1{
 
 }
 
-#ctr{}
-
 .skill-prog{
     width: 80% !important;
 }
 
 #skill-table{
     margin: 0px !important;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
 .grid{
@@ -77,12 +89,16 @@ h1{
 
 #Experience{
     background-image: url('/media/2.jpg');
-    background-position:top;
+    background-position:bottom;
 }
 
 #message{
     resize: none;
     overflow: auto;
+}
+#contact-form-container{
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -121,6 +137,7 @@ h1{
         width: 95px;
         height: 20%;
     }
+    
 
     
 
