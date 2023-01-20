@@ -55,20 +55,23 @@
         <div class="container skill-card card" id="back">
           <article class="grid" >
             <table role="grid" id="skill-table">
-              <tr><td><img class="skill-img" src="media/csharp.png" alt="C#"></td><td><progress class="skill-prog" value="75" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/cpp.png" alt="C++"></td><td><progress class="skill-prog" value="30" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/dotnet.png" alt=".NET"></td><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/php.png" alt="PHP"></td><td><progress class="skill-prog" value="50" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/sql.png" alt="SQL"></td><td><progress class="skill-prog" value="70" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/csharp.png" alt="C#"></td><td id="prg-container"><progress class="skill-prog" value="75" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/cpp.png" alt="C++"></td><td id="prg-container"><progress class="skill-prog" value="30" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/dotnet.png" alt=".NET"></td id="prg-container"><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/php.png" alt="PHP"></td><td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/sql.png" alt="SQL"></td><td id="prg-container"><progress class="skill-prog" value="70" max="100"></progress></td></tr>
               
               
             </table>
             <div id="grid-text">
               <hgroup>
                 <h2>Backend skills</h1>
-                <h4>lorem ipsum</h2>
+                <h4>Because looks are not everything</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor maiores possimus dicta molestias magnam voluptates ipsa sint doloribus explicabo veniam blanditiis ullam cum laboriosam quasi, nihil quidem distinctio repellendus.
+                  I think of myself as more of a backend guy. I enjoy it more, and I generally more like tinkering with code itself instead of UI. 
+                  C# is my favourite language, and because of that i use .NET and ASP a lot. I think that it is a pretty solid way to build web apps.
+                  I also know some PHP, C++ and python. Because of my school profile I learn new stuff everyday, so I'm not afraid of trying new technologies. ...
+
                 </p>
               </hgroup>
             </div>
@@ -78,20 +81,21 @@
         <div class="container skill-card card" id="front">
           <article class="grid" >
             <table role="grid" id="skill-table">
-              <tr><td><img class="skill-img" src="media/js.png" alt="JavaScript"></td><td><progress class="skill-prog" value="40" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/css.png" alt="CSS"></td><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/pico.jpg" alt="Pico CSS"></td><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/bootstrap.png" alt="BootStrap"></td><td><progress class="skill-prog" value="50" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/bulma.png" alt="BulmaCSS"></td><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/js.png" alt="JavaScript"></td><td id="prg-container"><progress class="skill-prog" value="40" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/css.png" alt="CSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/pico.jpg" alt="Pico CSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/bootstrap.png" alt="BootStrap"></td><td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td></tr>
+              <tr><td><img class="skill-img" src="media/bulma.png" alt="BulmaCSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
               
               
             </table>
             <div id="grid-text">
               <hgroup>
                 <h2>Frontend skills</h1>
-                <h4>lorem ipsum</h2>
+                <h4>But book has to have good cover</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae dolor maiores possimus dicta molestias magnam voluptates ipsa sint doloribus explicabo veniam blanditiis ullam cum laboriosam quasi, nihil quidem distinctio repellendus.
+                  Front end is not really my strong side, so i tend to use frameworks like bootstrap, bulma and pico css more than vanilla css, mainly because it makes the development process much quicker,
+                  but I'm not afraid of writing styles myself. ...
                 </p>
               </hgroup>
             </div>
@@ -105,7 +109,7 @@
             <div id="grid-text">
               <hgroup>
                 <h2>My Experience</h1>
-                <h4>lorem ipsum</h2>
+                <h4>The best source of information is experience</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugit officia, explicabo libero provident incidunt eaque magnam odio nulla, nostrum voluptatibus necessitatibus eligendi porro esse repellendus aut perspiciatis saepe impedit.
                 </p>
               </hgroup>
@@ -125,7 +129,7 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" required></textarea>
 
-              <button type="submit" class="primary" onclick="event.preventDefault()">Login</button>
+              <button type="submit" class="primary"">Login</button>
 
             </form>
             

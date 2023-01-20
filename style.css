@@ -12,11 +12,18 @@ nav{
     top:0;
     position: fixed !important;
     transition: top 0.5s !important;
+    background-color: #11191F99;
+}
+
+.nav-shadow{
+    -webkit-box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
+-moz-box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
+box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
 }
 
 #welcome-screen{
-    margin-bottom: 50%;
-    margin-top:5%
+    margin-bottom: 60%;
+    margin-top:5%;
 }
 
 h1{
@@ -32,7 +39,6 @@ h1{
     display: block;
     width: 50px;
     float:left;
-
 }
 
 .skill-container{
@@ -85,6 +91,10 @@ h1{
 
 .grid-item{
     display: flex;
+}
+
+#prg-container{
+    width: 75% !important;
 }
 
 #Experience{
