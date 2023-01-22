@@ -14,7 +14,7 @@ window.onscroll = function() {
     }
   }
 
-  if(window.scrollY==0){
+  if(window.scrollY==0 || isMobile && window.scrollY < 200){
     if(nav.classList.contains(shadow)) nav.classList.remove(shadow)
   }
   else{
