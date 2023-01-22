@@ -19,7 +19,7 @@ nav{
     top:0;
     position: fixed !important;
     transition: top 0.5s !important;
-    background-color: #181A1B99 !important !important;
+    background-color: #181A1B99 !important;
     overflow: hidden;
 
 }
