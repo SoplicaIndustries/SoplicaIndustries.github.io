@@ -3,13 +3,13 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   let nav = document.getElementById("nav")
   let shadow = "nav-shadow"
-
+  let isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
   console.log(window.scrollY)
 
   if (prevScrollpos > currentScrollPos) {
     nav.style.top = "0";
   } else {
-    if(window.scrollY > 150){
+    if(isMobile && window.scrollY > 250){
     nav.style.top = "-200px";
     }
   }
