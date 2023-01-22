@@ -12,13 +12,62 @@ nav{
     top:0;
     position: fixed !important;
     transition: top 0.5s !important;
-    background-color: #181A1B99;
+    background-color: #181A1B99 !important !important;
+    overflow: hidden;
+
+}
+
+
+#nav-button-container{
+    
+}
+
+#open-button-container{
+    display: none;
+
+}
+
+.btt{
+    background-position: center !important;
+    background-size: 80% !important;
+    width: 40px;
+    height: 40px;
+}
+
+#openbtn{
+    background-image: url('/media/menu.png') !important;
+
+}
+
+#closebtn{
+    background-image: url('/media/close.png') !important;
+    display: none;
+
+}
+
+.collapse{
+    position: fixed !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 40%;
+    background-color: grey;
+    right: -40%;
+    top: 0%;
+    padding: 30px;
+    transition: 0.5s !important;
+}
+
+.collapse > li{
+    width: 70%;
 }
 
 .nav-shadow{
-    -webkit-box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
+-webkit-box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
 -moz-box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
 box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
+
 }
 
 #welcome-screen{
@@ -32,7 +81,7 @@ h1{
 
 .card{
     margin-bottom: 25%;
-    transition: ease-in 0.5s !important 
+
 }
 
 .skill-img{
@@ -111,6 +160,8 @@ h1{
     padding-right: 120px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     h1{
         font-size: 250% !important;
@@ -157,5 +208,35 @@ h1{
     padding-right: 30px;
     }
 
-    
+    #open-button-container{
+        display: block;
+    }
+
+    #closebtn{
+        display: block;
+    }
+
+    #nav-button-container{
+        position: fixed !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 70%;
+        background-color: #2c3033;
+        right: -70%;
+        top: 0%;
+        padding: 30px;
+        transition: 0.5s !important;
+    }
+
+    #nav-button-container>li{
+    width: 70%;
+    }
+
+    #welcome-screen{
+        margin-top: 40%;
+        margin-bottom: 100%;
+    }
+
   }

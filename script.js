@@ -18,8 +18,16 @@ function show(id){
     if(isMobile)divider=25; // set after setting margin of cards
     else divider = 5;
 
-    console.log(isMobile + " " + divider)
+
 
     const middle = absoluteElementTop - (window.innerHeight / divider);
     window.scrollTo({top: middle, behavior: 'smooth'});
+    menuHandler()
 }
+
+function menuHandler(){
+    let container = document.getElementById("nav-button-container");
+    let style = container.style
+    if(style.right == "-70%") container.style.right = "0%";
+    else container.style.right = "-70%";
+  }
