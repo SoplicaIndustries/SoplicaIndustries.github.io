@@ -28,6 +28,13 @@ function show(id){
 function menuHandler(){
     let container = document.getElementById("nav-button-container");
     let style = container.style
-    if(style.right == "-70%") container.style.right = "0%";
-    else container.style.right = "-70%";
+    let dimm = document.getElementById("dimm")
+    if(style.right == "-70%"){
+        container.style.right = "0%"
+        dimm.style.display = "block"
+    }
+    else{
+        container.style.right = "-70%"
+        dimm.style.display = "none"
+    };
   }

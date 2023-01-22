@@ -4,7 +4,7 @@ window.onscroll = function() {
   let nav = document.getElementById("nav")
   let shadow = "nav-shadow"
   let isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
-  console.log(window.scrollY)
+
 
   if (prevScrollpos > currentScrollPos) {
     nav.style.top = "0";
