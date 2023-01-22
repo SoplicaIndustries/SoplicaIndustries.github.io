@@ -13,7 +13,7 @@ function show(id){
     const elementRect = element.getBoundingClientRect();
     const absoluteElementTop = elementRect.top + window.pageYOffset;
 
-    let isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+    let isMobile = Math.min(window.screen.width, window.screen.height) < 576 || navigator.userAgent.indexOf("Mobi") > -1;
     let divider;
     if(isMobile)divider=25; // set after setting margin of cards
     else divider = 5;
@@ -26,6 +26,8 @@ function show(id){
 }
 
 function menuHandler(){
+    let isMobile = Math.min(window.screen.width, window.screen.height) < 576 || navigator.userAgent.indexOf("Mobi") > -1;
+    if(!isMobile) return;
     let container = document.getElementById("nav-button-container");
     let style = container.style
     let dimm = document.getElementById("dimm")
