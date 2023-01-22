@@ -8,6 +8,13 @@ main{
      margin-top: 10%;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: smaller;
+}
+
 nav{
     top:0;
     position: fixed !important;

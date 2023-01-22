@@ -31,7 +31,9 @@ function menuHandler(){
     let container = document.getElementById("nav-button-container");
     let style = container.style
     let dimm = document.getElementById("dimm")
+
     if(style.right == "-70%"){
+
         container.style.right = "0%"
         dimm.style.display = "block"
     }
