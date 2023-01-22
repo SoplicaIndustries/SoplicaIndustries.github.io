@@ -9,7 +9,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     nav.style.top = "0";
   } else {
-    if(isMobile && window.scrollY > 250){
+    if(isMobile && window.scrollY > 200){
     nav.style.top = "-200px";
     }
   }
