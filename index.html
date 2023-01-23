@@ -19,10 +19,15 @@
           <p style="color: purple; position: absolute; left: 25%;">Site under development</p>
         </ul>
         <ul id="open-button-container">
-          <li><button class="btt" id="openbtn" onclick="menuHandler()"></button></li>
+          <li>
+            <div class="hamburger-menu" onclick="menuHandler()">
+              <div id="bar-top"></div>
+              <div id="bar-middle"></div>
+              <div id="bar-bottom"></div>
+            </div>
+          </li>
         </ul>
         <ul id="nav-button-container">
-          <button class="btt" id="closebtn" onclick="menuHandler()"></button>
           <li><button role="button" class="outline" onclick="show('about')">About</button></li>
           <li><button role="button" class="outline" onclick="show('back')">Backend</button></li>
           <li><button role="button" class="outline" onclick="show('front')">Frontend</button></li>

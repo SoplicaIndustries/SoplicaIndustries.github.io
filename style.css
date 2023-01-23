@@ -55,15 +55,44 @@ nav{
 
 #openbtn{
     background-image: url('/media/menu.png') !important;
-
+    z-index: 10;
+    position: relative;
 }
 
-#closebtn{
-    background-image: url('/media/close.png') !important;
-    display: none;
+.hamburger-menu {
 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+  }
+  #bar-top,
+  #bar-middle,
+  #bar-bottom {
+    height: 4px;
+    background-color: #1AB3E6;
+    border-radius: 5px;
+    margin: 4px 0;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
+  
+  .hamburger-menu:hover #bar-top {
+    background-color: #3ac4f2;
+  }
 
-}
+  .hamburger-menu:hover #bar-middle {
+    background-color: #3ac4f2;
+  }
+
+  .hamburger-menu:hover #bar-bottom {
+    background-color: #3ac4f2;
+  }
+
 
 .collapse{
     position: fixed !important;
@@ -193,7 +222,7 @@ h1{
 
     #nav-logo{
         width: 150px;
-        height: 25%;
+        height: 120px;
     }
     
   }
@@ -216,7 +245,7 @@ h1{
     #nav-logo{
         display: block;
         width: 95px;
-        height: 20%;
+        height: 25%;
     }
     
     #form-text{
@@ -248,7 +277,7 @@ h1{
         top: 0%;
         padding: 30px;
         transition: 0.5s !important;
-        z-index: 999;
+        z-index: 2;
     }
 
     #nav-button-container>li{
