@@ -1,165 +1,195 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/sop_dark.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <title>Soplica Industries</title>
-</head>
-<body onload="age(); menuHandler()">
-
-    <div id="dimm"></div>
-
-    <nav class="container-fluid" id="nav">
-        <ul>
-          <li><img src="media/sop_clear.png" id="nav-logo"></li>
-        </ul>
-        <ul id="open-button-container">
-          <li>
-            <div class="hamburger-menu" onclick="menuHandler()">
-              <div id="bar-top"></div>
-              <div id="bar-middle"></div>
-              <div id="bar-bottom"></div>
-            </div>
-          </li>
-        </ul>
-        <ul id="nav-button-container">
-          <li><button role="button" class="outline" onclick="show('about')">About</button></li>
-          <li><button role="button" class="outline" onclick="show('back')">Backend</button></li>
-          <li><button role="button" class="outline" onclick="show('front')">Frontend</button></li>
-          <li><button role="button" class="outline" onclick="show('experience')">Experience</button></li>
-          <li><button role="button" class="outline" onclick="show('contact')">Contact</button></li>
-        </ul>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="media/sop_dark.png">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+      <title>Soplica Industries</title>
+   </head>
+   <body onload="age(); menuHandler()">
+      <div id="dimm"></div>
+      <nav class="container-fluid" id="nav">
+         <ul>
+            <li><img src="media/sop_clear.png" id="nav-logo"></li>
+         </ul>
+         <ul id="open-button-container">
+            <li>
+               <div class="hamburger-menu" onclick="menuHandler()">
+                  <div id="bar-top"></div>
+                  <div id="bar-middle"></div>
+                  <div id="bar-bottom"></div>
+               </div>
+            </li>
+         </ul>
+         <ul id="nav-button-container">
+            <li><button role="button" class="outline" onclick="show('about')">About</button></li>
+            <li><button role="button" class="outline" onclick="show('back')">Backend</button></li>
+            <li><button role="button" class="outline" onclick="show('front')">Frontend</button></li>
+            <li><button role="button" class="outline" onclick="show('experience')">Experience</button></li>
+            <li><button role="button" class="outline" onclick="show('contact')">Contact</button></li>
+         </ul>
       </nav>
-
-
-    <main class="container">
-        <hgroup id="welcome-screen">
+      <main class="container">
+         <hgroup id="welcome-screen">
             <h5>Hi, my name is</h5>
             <h1>Kacper Rogóż</h1>
             <h1>Im a Fullstack developer</h1>
             <h5>Currently I'm studying in a technical school, and working as a freelancer.<br> My main goal is to become a software engineer in the near future</h5>
-        </hgroup>
-
-        
-        <div class="container card" id="about">
-          <article class="grid">
-            <div class="grid-img about-img">
-            </div>
-            <div id="grid-text">
-              <hgroup>
-                <h2>About me</h1>
-                <h4>Let me tell you a story</h2>
-                <p>My name is Kacper, I'm a <strong id="age"></strong> years old student from a small town in Poland.
-                  I code since I was 14, and it became one of my hobbies. Currently I'm in technical school, with programming specialization, and last year I was awarded a <strong>scholarship</strong> for being one of the top five programmers in my school.
-                  In free time i like riding mountain bikes, hiking, and sailing. Because of my bike obsession, I had to learn how to service it, so I also know a little bit of mechanic stuff.
-                  I think of myself as a stubborn person, but in a good way. I won't stop untill I achieve my goal.
-                </p>
-              </hgroup>
-            </div>
-          </article>
-        </div>
-
-        <div class="container skill-card card" id="back">
-          <article class="grid" >
-            <table role="grid" id="skill-table">
-              <tr><td><img class="skill-img" src="media/csharp.png" alt="C#"></td><td id="prg-container"><progress class="skill-prog" value="75" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/cpp.png" alt="C++"></td><td id="prg-container"><progress class="skill-prog" value="30" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/dotnet.png" alt=".NET"></td id="prg-container"><td><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/php.png" alt="PHP"></td><td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/sql.png" alt="SQL"></td><td id="prg-container"><progress class="skill-prog" value="70" max="100"></progress></td></tr>
+         </hgroup>
+         <div class="container card" id="about">
+            <article class="grid">
+               <div class="grid-img about-img">
+               </div>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>
+                        About me</h1>
+                        <h4>
+                        Let me tell you a story
+                     </h2>
+                     <p>My name is Kacper, I'm a <strong id="age"></strong> years old student from a small town in Poland.
+                        I code since I was 14, and it became one of my hobbies. Currently I'm in technical school, with programming specialization, and last year I was awarded a <strong>scholarship</strong> for being one of the top five programmers in my school.
+                        In free time i like riding mountain bikes, hiking, and sailing. Because of my bike obsession, I had to learn how to service it, so I also know a little bit of mechanic stuff.
+                        I think of myself as a stubborn person, but in a good way. I won't stop untill I achieve my goal.
+                     </p>
+                  </hgroup>
+               </div>
+            </article>
+         </div>
+         <div class="container skill-card card" id="back">
+            <article class="grid" >
+               <table role="grid" id="skill-table">
+                  <tr>
+                     <td><img class="skill-img" src="media/csharp.png" alt="C#"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="75" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/cpp.png" alt="C++"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="30" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/dotnet.png" alt=".NET"></td id="prg-container">
+                     <td><progress class="skill-prog" value="60" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/php.png" alt="PHP"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/sql.png" alt="SQL"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="70" max="100"></progress></td>
+                  </tr>
+               </table>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>
+                        Backend skills</h1>
+                        <h4>
+                        Because looks are not everything
+                     </h2>
+                     <p>
+                        I have a good knowledge of <strong>C# and ASP.NET</strong>, which is my current go-to when it comes to backend. I also have completed a <strong>ASP.NET web application development</strong> course from a EU project.
+                        But my knowledge does not end there. I also know <strong>C++</strong> an <strong>PHP</strong> on a moderate level, and when it comes to databases I know how to work with <strong>MySQL</strong>, <strong>MSSQL</strong>, and <strong>SQLite</strong>. Also I'm currently learning MongoDB.
+                     </p>
+                  </hgroup>
+               </div>
+            </article>
+         </div>
+         <div class="container skill-card card" id="front">
+            <article class="grid" >
+               <table role="grid" id="skill-table">
+                  <tr>
+                     <td><img class="skill-img" src="media/js.png" alt="JavaScript"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="40" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/css.png" alt="CSS"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/pico.jpg" alt="Pico CSS"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/bootstrap.png" alt="BootStrap"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td>
+                  </tr>
+                  <tr>
+                     <td><img class="skill-img" src="media/bulma.png" alt="BulmaCSS"></td>
+                     <td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td>
+                  </tr>
+               </table>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>
+                        Frontend skills</h1>
+                        <h4>
+                        But every book needs a good cover
+                     </h2>
+                     <p>
+                        When it comes to frontend I like to use frameworks, like <strong>PicoCss</strong>, <strong>Bootstrap</strong> and <strong>Bulma</strong>, which I know on a moderate level. 
+                        I also have a solid understanding of <strong>CSS</strong>, and I know basic <strong>JavaScript</strong>. I know how to design, create and modify a modern UI.
+                     </p>
+                  </hgroup>
+               </div>
+            </article>
+         </div>
+         <div class="container card" id="experience">
+            <article class="grid">
+               <div class="grid-img" id="Experience">
+               </div>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>
+                        My Experience</h1>
+                        <h4>
+                        Every experience makes you grow
+                     </h2>
+                     <p>
+                        While serving time in my school I've done many small projects, like a <strong>Snake game clone</strong> done in winforms, <strong>client for a dummy botnet</strong> (for research purposes), <strong>Auth API</strong> and a lot more.
+                        Last year I've teamed up with my friend to build a web app that utilised a <strong>text to speech conversion and U-Arm to type on a physical keyboard</strong>. We did it for our local astronomical observatory robotics classes, to show kids what can you do with a robot.
+                        I have also been on a summer internship in a local tech company called <a href="https://bloomdev.pl/">Bloom</a> where I developed web applications, databases and rest API's.
+                     </p>
+                  </hgroup>
+               </div>
+            </article>
+         </div>
+         <div class="container card" id="contact">
+            <article class="grid">
               
-              
-            </table>
-            <div id="grid-text">
-              <hgroup>
-                <h2>Backend skills</h1>
-                <h4>Because looks are not everything</h2>
-                <p>
-                  I have a good knowledge of <strong>C# and ASP.NET</strong>, which is my current go-to when it comes to backend. I also have completed a <strong>ASP.NET web application development</strong> course from a EU project.
-                  But my knowledge does not end there. I also know <strong>C++</strong> an <strong>PHP</strong> on a moderate level, and when it comes to databases I know how to work with <strong>MySQL</strong>, <strong>MSSQL</strong>, and <strong>SQLite</strong>. Also I'm currently learning MongoDB.
-                </p>
-              </hgroup>
-            </div>
-          </article>
-        </div>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>Get in touch with me</h2>
+                     <h3>Write directly to me</h3>
+                  </hgroup>
+                  <form id="contact-form"action="https://formspree.io/f/mbjelwnd"
+                     method="POST">
 
-        <div class="container skill-card card" id="front">
-          <article class="grid" >
-            <table role="grid" id="skill-table">
-              <tr><td><img class="skill-img" src="media/js.png" alt="JavaScript"></td><td id="prg-container"><progress class="skill-prog" value="40" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/css.png" alt="CSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/pico.jpg" alt="Pico CSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/bootstrap.png" alt="BootStrap"></td><td id="prg-container"><progress class="skill-prog" value="50" max="100"></progress></td></tr>
-              <tr><td><img class="skill-img" src="media/bulma.png" alt="BulmaCSS"></td><td id="prg-container"><progress class="skill-prog" value="60" max="100"></progress></td></tr>
-              
-              
-            </table>
-            <div id="grid-text">
-              <hgroup>
-                <h2>Frontend skills</h1>
-                <h4>But every book needs a good cover</h2>
-                <p>
-                  When it comes to frontend I like to use frameworks, like <strong>PicoCss</strong>, <strong>Bootstrap</strong> and <strong>Bulma</strong>, which I know on a moderate level. 
-                  I also have a solid understanding of <strong>CSS</strong>, and I know basic <strong>JavaScript</strong>. I know how to design, create and modify a modern UI.
-                </p>
-              </hgroup>
-            </div>
-          </article>
-        </div>
+                        <input type="text" name="email" placeholder="Your e-mail" aria-label="email" required="true">
+                        <textarea id="message" name="message" required="true" placeholder="Your message"></textarea>
 
-        <div class="container card" id="experience">
-          <article class="grid">
-            <div class="grid-img" id="Experience">
-            </div>
-            <div id="grid-text">
-              <hgroup>
-                <h2>My Experience</h1>
-                <h4>Every experience makes you grow</h2>
-                <p>
-                  While serving time in my school I've done many small projects, like a <strong>Snake game clone</strong> done in winforms, <strong>client for a dummy botnet</strong> (for research purposes), <strong>Auth API</strong> and a lot more.
-                  Last year I've teamed up with my friend to build a web app that utilised a <strong>text to speech conversion and U-Arm to type on a physical keyboard</strong>. We did it for our local astronomical observatory robotics classes, to show kids what can you do with a robot.
-                  I have also been on a summer internship in a local tech company called <a href="https://bloomdev.pl/">Bloom</a> where I developed web applications, databases and rest API's.
-
-                </p>
-              </hgroup>
-            </div>
-          </article>
-        </div>
-
-        
-
-        <div class="container card" id="contact">
-          <article id="contact-form-container">
-            <h2 id="form-text">Get in touch with me</h2>
-            <form id="contact-form"action="https://formspree.io/f/mbjelwnd"
-            method="POST">
-              <label for="email">E-Mail</label>
-              <input type="text" id="email" name="email" placeholder="Your email" required>
-
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-
-              <button type="submit" class="primary"">Submit</button>
-
-            </form>
-            
-
-          </article>
-        </div>
-      
-        <footer>
-          Built by Kacper Rogóż 2023
-        </footer>
-
-    </main>
-
-
-
-    <script src="script.js" defer></script>
-    <script src="nav.js" defer></script>
-</body>
+                     <button type="submit" class="primary"">Submit</button>
+                  </form>
+               </div>
+               <div id="grid-text">
+                  <hgroup>
+                     <h2>Find me on social media</h2>
+                     <h3></h3>
+                     <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magni tempora ipsa? Amet quisquam perferendis architecto quaerat eum aspernatur deserunt tempore sunt incidunt distinctio, ex obcaecati labore iure provident earum.
+                     </p>
+                  </hgroup>
+               </div>
+            </article>
+         </div>
+         <footer>
+            Built by Kacper Rogóż 2023
+         </footer>
+      </main>
+      <script src="script.js" defer></script>
+      <script src="nav.js" defer></script>
+   </body>
 </html>

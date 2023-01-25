@@ -204,10 +204,23 @@ h1{
     resize: none;
     overflow: auto;
 }
-#contact-form-container{
-    padding-left: 120px;
-    padding-right: 120px;
+#contact-form{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+
+#email{
+    width: 100% !important;
+}
+
+#message{
+    height: 200px;
+}
+
 
 
 
