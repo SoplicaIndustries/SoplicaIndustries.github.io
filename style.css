@@ -82,15 +82,15 @@ nav{
   }
   
   .hamburger-menu:hover #bar-top {
-    background-color: #3ac4f2;
+    filter: brightness(130%);
   }
 
   .hamburger-menu:hover #bar-middle {
-    background-color: #3ac4f2;
+    filter: brightness(130%);
   }
 
   .hamburger-menu:hover #bar-bottom {
-    background-color: #3ac4f2;
+    filter: brightness(130%);
   }
 
 
@@ -203,11 +203,84 @@ h1{
 #message{
     resize: none;
     overflow: auto;
+    height: 250px;
 }
-#contact-form-container{
-    padding-left: 120px;
-    padding-right: 120px;
+
+
+.icon{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    background-color: #1AB3E6;
+    background-size: contain;
+    transition:cubic-bezier(1, 0, 0, 1) 0.1s;
+    justify-content: center;
+    text-decoration: none !important;
 }
+
+.icon:hover{
+    transform: scale(1.1);
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.icon > p{
+    color: white;
+    font-size: medium;
+    margin-top: 80px;
+    text-decoration: none !important;
+
+}
+
+#insta{
+    background-image: url('/icons/insta.svg');
+    grid-area: a;
+}
+
+#github{
+    background-image: url('/icons/github.svg');
+    grid-area: b;
+}
+
+#mess{
+    background-image: url('/icons/messenger.svg');
+    grid-area: c;
+}
+
+#disc{
+    background-image: url('/icons/discord.svg');
+    grid-area: d;
+}
+
+#linkedin{
+    background-image: url('/icons/linkedin.svg');
+    grid-area: e;
+}
+
+#useme{
+    background-image: url('/icons/useme.png');
+    grid-area: f;
+}
+
+.icon-container{
+    margin-top: 10%;
+    width: 100%;
+    display: inline-grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    justify-items: center;
+    align-items: center;
+    gap: 50% 0px; 
+    grid-template-areas: 
+      "a b c"
+      "d e f"; 
+  }
+
+  #grid-icon{
+    padding: 30px !important;
+    min-height: 500px !important;
+  }
 
 
 
@@ -288,5 +361,6 @@ h1{
         margin-top: 55%;
         margin-bottom: 50vh;
     }
+
 
   }
