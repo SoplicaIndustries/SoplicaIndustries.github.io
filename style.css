@@ -209,8 +209,8 @@ h1{
 
 .icon{
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 20%;
     background-color: #1AB3E6;
     background-size: contain;
@@ -228,7 +228,7 @@ h1{
 .icon > p{
     color: white;
     font-size: medium;
-    margin-top: 80px;
+    margin-top: 110px;
     text-decoration: none !important;
 
 }
@@ -360,6 +360,16 @@ h1{
     #welcome-screen{
         margin-top: 55%;
         margin-bottom: 50vh;
+    }
+
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
+    .icon > p{
+
+        margin-top: 90px;
+    
     }
 
 
