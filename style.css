@@ -24,6 +24,13 @@ nav{
 
 }
 
+.visible{
+    opacity: 1 !important;
+    margin-left: 0 !important;
+
+}
+
+
 
 #nav-button-container{
     
@@ -120,7 +127,7 @@ box-shadow: 0px 20px 75px -12px rgb(23, 23, 26);
 }
 
 #welcome-screen{
-    margin-bottom: 60%;
+    margin-bottom: 50vh;
     margin-top:5%;
 }
 
@@ -129,8 +136,9 @@ h1{
 }
 
 .card{
-    margin-bottom: 25%;
+    margin-bottom: 50vh;
 
+    transition: all 1s;
 }
 
 .skill-img{

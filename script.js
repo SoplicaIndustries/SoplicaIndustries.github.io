@@ -56,3 +56,23 @@ function menuHandler(){
         container.style.right = "-70%"
     }
   }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+
+            entry.target.setAttribute('style', 'margin-left: 0vw !important');
+            entry.target.style.opacity = "1"
+        }
+        else{
+            entry.target.setAttribute('style', 'margin-left: -5vw !important');
+            entry.target.style.opacity = "0"
+        }
+    })
+})
+
+
+let cards = document.querySelectorAll('.card');
+
+cards.forEach((el) => observer.observe(el));
+
