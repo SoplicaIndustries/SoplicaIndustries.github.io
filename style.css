@@ -21,6 +21,7 @@ nav{
     transition: top 0.5s !important;
     background-color: #11191F99 !important;
     overflow: hidden;
+    z-index: 10;
 
 }
 
@@ -74,7 +75,7 @@ nav{
     height: 2.5rem;
     width: 2.5rem;
     cursor: pointer;
-    z-index: 10;
+    z-index: 30;
     position: relative;
   }
   #bar-top,
@@ -358,7 +359,7 @@ h1{
         top: 0%;
         padding: 30px;
         transition: 0.5s !important;
-        z-index: 2;
+        z-index: 20;
     }
 
     #nav-button-container>li{
