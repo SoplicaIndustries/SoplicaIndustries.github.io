@@ -1,5 +1,10 @@
 
 function age(){
+
+    //This function was used to show my age based on my birth date, but i found out that because of this people haven't treated me seriously enough.
+    //Thats why i decided to remove this feature, but if you're a potential employeer, and you're reading this you must be already interested in working with me (because why would you check my code).
+    //So please, don't be concerned by my age.
+
     let birthDate = new Date('12/09/2005');
     let years = new Date(Date.now()-birthDate.getTime());
     let age = years.getUTCFullYear() - 1970;
@@ -15,7 +20,7 @@ function show(id){
 
     let isMobile = Math.min(window.screen.width, window.screen.height) < 576 || navigator.userAgent.indexOf("Mobi") > -1;
     let divider;
-    if(isMobile)divider=25; // set after setting margin of cards
+    if(isMobile)divider=25;
     else divider = 5;
 
 
