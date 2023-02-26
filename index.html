@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikacje dostosowane do twoich potrzeb">
+    <meta property="og:image" content="media/sop_dark.png">
+    <meta property="og:site_name" content="soplicaindustries.github.io">
+    <meta property="og:url" content="https://soplicaindustries.github.io">
+    <meta property="og:title" content="Soplica Industries">
+    <meta property="og:description" content="Aplikacje dostosowane do twoich potrzeb">
     <link rel="icon" href="media/sop_dark.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
@@ -31,6 +37,7 @@
           <li><button role="button" class="outline" onclick="show('back')">Backend</button></li>
           <li><button role="button" class="outline" onclick="show('front')">Frontend</button></li>
           <li><button role="button" class="outline" onclick="show('experience')">Experience</button></li>
+          <li><button role="button" class="outline" onclick="show('work')">Work</button></li>
           <li><button role="button" class="outline" onclick="show('contact')">Contact</button></li>
         </ul>
       </nav>
@@ -131,6 +138,45 @@
         </div>
 
         
+        <div class="container card" id="work">
+          <article class="grid">
+            <div class="grid-img blk-img" id="photo">
+            </div>
+            <div id="grid-text">
+              <div class="flx">
+                <div>
+              <hgroup name="api">
+                <h2>Identity API</h2>
+                <h4>C# and ASP.NET</h4>
+                <p><del>Section under development</del> adipisicing elit. Perferendis neque magnam magni nam, repudiandae molestiae laboriosam corporis aut molestias illo doloremque quidem quibusdam voluptas at a cum, cumque fugiat voluptates.</p>
+                <a href="#" role="button" class="primary" style="color:white;">Checkout the code!</a>
+              </hgroup>
+    
+              <hgroup name="moa" class="hidden">
+                <h2>Speech to text</h2>
+                <h4>Node JS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque magnam magni nam, repudiandae molestiae laboriosam corporis aut molestias illo doloremque quidem quibusdam voluptas at a cum, cumque fugiat voluptates.</p>
+                <a href="#" role="button" class="primary" style="color:white;">Checkout the code!</a>
+              </hgroup>
+    
+              <hgroup name="billing" class="hidden">
+                <h2>Billing Service</h2>
+                <h4>C# and ASP.NET</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque magnam magni nam, repudiandae molestiae laboriosam corporis aut molestias illo doloremque quidem quibusdam voluptas at a cum, cumque fugiat voluptates.</p>
+                <a href="#" role="button" class="primary" style="color:white;">Checkout the code!</a>
+              </hgroup>
+            </div>
+              
+              <div class="content-changer">
+                <div class="ctnc-btn" id="up" onclick="ctncSwitch('up')"></div>
+                <div class="ctnc-btn" id="down" onclick="ctncSwitch('down')"></div>
+              </div>
+              
+            </div>
+            </div>
+          </article>
+        </div>
+
         
 
         <div class="container card" id="contact">
@@ -167,7 +213,7 @@
                 <a href="https://useme.com/pl/roles/contractor/soplica-software-solutions,257025/" class="icon" id="useme" data-tooltip="Freelancer profile"><p>Useme</p></a>
               </div>
               
-
+              
 
             </div>
           </article>

@@ -60,7 +60,7 @@ function menuHandler(){
     else{
         container.style.right = "-70%"
     }
-  }
+}
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
@@ -74,7 +74,66 @@ function menuHandler(){
             entry.target.style.opacity = "0"
         }
     })
-})
+});
+
+
+
+function ctncSwitch(direction){
+    let arr = [
+        ["api", "/media/api.png"],
+        ["moa", "/media/moa.png"],
+        ["billing", "/media/billing_service.png"]
+    ]
+    let curr = 0;
+    let next = 0;
+    let photoid = 0;
+    let photo = document.getElementById("photo")
+    
+    arr.forEach(el => {
+        let group = document.getElementsByName(el[0]);
+        group.forEach(gr =>{
+            if(!gr.classList.contains("hidden")){
+                curr = el;
+                gr.classList.add("hidden");
+            }
+        })
+        
+
+    })
+
+
+    console.log(curr)
+
+     if(direction == "down"){
+         if(arr.indexOf(curr) == arr.length-1)next = arr[0]; 
+         else next = arr[arr.indexOf(curr)+1]; 
+         
+         
+     }
+     else if(direction == "up"){
+         if(arr.indexOf(curr) == 0) next = arr[arr.length-1]
+         else next = arr[arr.indexOf(curr)-1];
+         
+     }
+
+    
+     let divs = document.getElementsByName(next[0]);
+     
+     photo.style.backgroundImage = "url('"+next[1]+"')"
+
+     divs.forEach(el => {
+         if(el.classList.contains("hidden")) el.classList.remove("hidden")
+         
+     });
+
+     if(direction == "up") divs[0].style.animation = "up 0.5s";
+     else divs[0].style.animation = "down 0.5s"
+
+    
+    
+}
+
+
 
 
 let cards = document.querySelectorAll('.card');
