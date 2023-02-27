@@ -79,6 +79,13 @@ function menuHandler(){
 
 
 function ctncSwitch(direction){
+
+    var currentScrollPos = window.pageYOffset;
+    let nav = document.getElementById("nav")
+    let shadow = "nav-shadow"
+    let isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+
+
     let arr = [
         ["api", "/media/api.png"],
         ["moa", "/media/moa.png"],
@@ -126,8 +133,15 @@ function ctncSwitch(direction){
          
      });
 
-     if(direction == "up") divs[0].style.animation = "up 0.5s";
-     else divs[0].style.animation = "down 0.5s"
+     if(direction == "up"){
+        if(isMobile) divs[0].style.animation = "right 0.5s";
+        else divs[0].style.animation = "up 0.5s";
+     }
+     
+     else{
+        if(isMobile) divs[0].style.animation = "left 0.5s"
+        else divs[0].style.animation = "down 0.5s"
+    }
 
     
     

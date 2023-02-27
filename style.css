@@ -33,14 +33,12 @@ nav{
 
 #work{
     overflow: hidden;
+    max-height: 100%;
 }
 
 .blk-img{
-    position: relative;
-    display: block;
     opacity: 1;
-    transition: all 2s linear;
-    background-size: contain;
+    background-size: 100% 100% !important;
     background-image: url('/media/api.png');
 }
 
@@ -74,6 +72,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .ctnc-btn:hover{
@@ -265,7 +264,7 @@ h1{
 
 
 #grid-text{
-    padding: 30px !important;
+    padding: 30px;
 }
 
 .grid-img{
@@ -470,6 +469,35 @@ h1{
         flex-wrap: wrap ;
     }
 
+    .flx{
+        flex-direction: column-reverse;
+    }
+
+    .content-changer{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    
+    .ctnc-btn{
+        width: 39px;
+        height: 39px;
+        margin: 5px;
+        background-size: 50%;
+        transform: rotate(-180deg);
+    
+    }
+    
+    .ctnc-btn:nth-child(2){
+        transform: rotate(0deg);
+    }
+
+    .szczaw{
+        padding-top: 5px !important;
+        min-height: fit-content;
+    }
+
+
   }
 
   
@@ -482,6 +510,16 @@ h1{
   @keyframes down {
     from { transform: translateY(-300px); opacity:0; }
     to { transform: translateY(0px); opacity:1;}
+  }
+
+  @keyframes left {
+    from { transform: translateX(-300px); opacity:0; }
+    to { transform: translateX(0px); opacity:1;}
+  }
+
+  @keyframes right {
+    from { transform: translateX(300px); opacity:0; }
+    to { transform: translateX(0px); opacity:1;}
   }
   
 
