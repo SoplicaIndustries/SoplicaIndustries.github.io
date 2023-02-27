@@ -492,6 +492,14 @@ h1{
         transform: rotate(0deg);
     }
 
+    .ctnc-btn:hover{
+        transform: scale(1.1) rotate(-180deg);
+    }
+    
+    .ctnc-btn:nth-child(2):hover{
+        transform: scale(1.1) rotate(0deg);
+    }
+
     .szczaw{
         padding-top: 5px !important;
         min-height: fit-content;
