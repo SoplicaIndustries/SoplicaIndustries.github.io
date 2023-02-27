@@ -471,6 +471,7 @@ h1{
 
     .flx{
         flex-direction: column-reverse;
+
     }
 
     .content-changer{
@@ -480,8 +481,8 @@ h1{
     }
     
     .ctnc-btn{
-        width: 39px;
-        height: 39px;
+        width: 29px;
+        height: 29px;
         margin: 5px;
         background-size: 50%;
         transform: rotate(-180deg);
@@ -504,6 +505,7 @@ h1{
         padding-top: 5px !important;
         min-height: fit-content;
     }
+
 
 
   }
