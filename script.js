@@ -132,15 +132,15 @@ function ctncSwitch(direction){
          if(el.classList.contains("hidden")) el.classList.remove("hidden")
          
      });
-
+        
      if(direction == "up"){
-        if(isMobile) divs[0].style.animation = "right 0.5s";
-        else divs[0].style.animation = "up 0.5s";
+        if(isMobile){ divs[0].style.animation = "right 0.5s";}
+        else{divs[0].style.animation = "up 0.5s";}
      }
      
      else{
-        if(isMobile) divs[0].style.animation = "left 0.5s"
-        else divs[0].style.animation = "down 0.5s"
+        if(isMobile){divs[0].style.animation = "left 0.5s";}
+        else{ divs[0].style.animation = "down 0.5s";}
     }
 
     
