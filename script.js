@@ -126,7 +126,8 @@ function ctncSwitch(direction){
     
      let divs = document.getElementsByName(next[0]);
      
-     photo.style.backgroundImage = "url('"+next[1]+"')"
+    
+     photo.style.animation = "";
 
      divs.forEach(el => {
          if(el.classList.contains("hidden")) el.classList.remove("hidden")
@@ -134,13 +135,40 @@ function ctncSwitch(direction){
      });
         
      if(direction == "up"){
-        if(isMobile){ divs[0].style.animation = "right 0.5s";}
-        else{divs[0].style.animation = "up 0.5s";}
+        if(isMobile){
+            divs[0].style.animation = "right 0.5s";
+            setTimeout(()=>{
+                photo.style.backgroundImage = "url('"+next[1]+"')"
+                photo.style.animation = "right 0.5s";
+            }, 1)
+            
+        }
+        else{
+            divs[0].style.animation = "up 0.5s";
+            setTimeout(()=>{
+                photo.style.backgroundImage = "url('"+next[1]+"')"
+                photo.style.animation = "up 0.5s";
+            }, 1)
+            
+        }
      }
      
      else{
-        if(isMobile){divs[0].style.animation = "left 0.5s";}
-        else{ divs[0].style.animation = "down 0.5s";}
+        if(isMobile){
+            divs[0].style.animation = "left 0.5s";
+            setTimeout(()=>{
+                photo.style.backgroundImage = "url('"+next[1]+"')"
+                photo.style.animation = "left 0.5s";
+            }, 1)
+            
+        }
+        else{ 
+            divs[0].style.animation = "down 0.5s";
+            setTimeout(()=>{
+                photo.style.backgroundImage = "url('"+next[1]+"')"
+                photo.style.animation = "down 0.5s";
+            }, 1)
+        }
     }
 
     
